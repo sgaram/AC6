@@ -11,37 +11,37 @@ from googletrans import Translator
 import youtube_dl
 #ANTIJS_V2
 #cl = LineClient()
-cl = LineClient(authToken='EzkqTq6URZ4bWolsi0O5.mxtTAcw+sQNTDhIsRu9tjq.efJ/8aAL6npX9iSbkpP1wLQ76yIphcd6XT9OMFekSvM=')
+cl = LineClient(authToken='EzkqTq6URZ4bWolsi0O5.mxtTAcw+sQNTDhIsRu9tjq.efJ/8aAL6npX9iSbkpP1wLQ76yIphcd6XT9OMFekSvM1=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 #ki = LineClient()
-ki = LineClient(authToken='EzCbUpEngjBqsBVYWsie.nRJtaj2WrPTi1gcw8sOBVG.noQloh76wwsyaG64u6SKluDsG9LnnLwp9mTWnYc9EeY=')
+ki = LineClient(authToken='EzCbUpEngjBqsBVYWsie.nRJtaj2WrPTi1gcw8sOBVG.noQloh76wwsyaG64u6SKluDsG9LnnLwp9mTWnYc9EeY1=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
 #kk = LineClient()
-kk = LineClient(authToken='EzUXII4WKoAhfi2H8CB9.aWEzZF+g5kDlHi7lnumDoq.WPraeyhrw3i8s9KLEZn2pFNxwGEHxcl0G4anFd4erRs=')
+kk = LineClient(authToken='EzUXII4WKoAhfi2H8CB9.aWEzZF+g5kDlHi7lnumDoq.WPraeyhrw3i8s9KLEZn2pFNxwGEHxcl0G4anFd4erRs1=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
 #kc = LineClient()
-kc = LineClient(authToken='EzBvtNHUI784EppV5T1e.xCHQP1Kzr+wPvpg1Er5PpG.XI+MqmQ8YXWLi1IDqrb7943I8VhSjGzIv7dUebpaT1Y=')
+kc = LineClient(authToken='EzBvtNHUI784EppV5T1e.xCHQP1Kzr+wPvpg1Er5PpG.XI+MqmQ8YXWLi1IDqrb7943I8VhSjGzIv7dUebpaT1Y1=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 #sw = LineClient()
-sw = LineClient(authToken='EzYkmcXJetYrGKdafJs6.TS6c4iMFWuA67Wxw29KPDG.K6Q9s9MLP0WN5UrgXrN26fQRrfIb8YinrLUQPumefkQ=')
+sw = LineClient(authToken='EzYkmcXJetYrGKdafJs6.TS6c4iMFWuA67Wxw29KPDG.K6Q9s9MLP0WN5UrgXrN26fQRrfIb8YinrLUQPumefkQ1=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 #sc = LineClient()
-sc = LineClient(authToken='EzNinjzjmSS0F94aveMd.m8blJq9roJBMLXRuxOnDpq.MRrLGtDGLy7ZZGzyBsCkOZfPaOC4riIrnMkrsdlBtvc=')
+sc = LineClient(authToken='EzNinjzjmSS0F94aveMd.m8blJq9roJBMLXRuxOnDpq.MRrLGtDGLy7ZZGzyBsCkOZfPaOC4riIrnMkrsdlBtvc1=')
 sc.log("Auth Token : " + str(sc.authToken))
 channel12 = LineChannel(sc)
 sc.log("Channel Access Token : " + str(channel12.channelAccessToken))
@@ -1448,6 +1448,11 @@ def bot(op):
                                    cl.sendVideoWithURL(msg.to, 'http://dl.profile.line.naver.jp'+str(mi.picturePath)+'/vp.small')
                                else:
                                    cl.sendImageWithURL(msg.to, 'http://dl.profile.line.naver.jp'+str(mi.picturePath))
+
+                        elif cmd == "kibar":
+                          if wait["selfbot"] == True:
+                            cl.sendMessage(msg.to, "kibar opo.. noh kibar semvak ku ae wkwkwkkk")
+                            cl.sendImageWithURL(msg.to,"https://akphoto1.ask.fm/909/565/146/-249996987-1spa3d6-atsddg4aggpsohf/original/file.jpg") 
 
                         elif cmd == "mybot":
                           if wait["selfbot"] == True:
